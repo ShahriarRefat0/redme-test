@@ -2,22 +2,22 @@
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?  
 **Answer:**  
-_getElementById_
+- _getElementById_
   - It returns the element with a specific id.
   - Return type is single element object or null if not fund.
   - Example:  
 ```
 let firstItem = document.getElementById("idName");  
 ```
-_getElementsByClassName_
-- It returns all the elements that given class name.
-- Return type is an HtmlCollection. HtmlCollection are live and it's auto update if anything change in DOM.
-- Example:  
+- _getElementsByClassName_
+  - It returns all the elements that given class name.
+  - Return type is an HtmlCollection. HtmlCollection are live and it's auto update if anything change in DOM.
+  - Example:  
 ``` 
 let firstItems = document.getElementsByClassName("className");  
 ```  
 
-_querySelector_
+- _querySelector_
   - It returns the first element that matches a CSS selector. It could be id, class, tag, attributes.
   - Return type is single element object or null if not fund.
   - Example:  
@@ -26,19 +26,20 @@ let menuItem = document.querySelector(".menu-item"); //element with class="menu-
 let header = document.querySelector("#header"); // element with id="header"  
 let special = document.querySelector("div > p.note"); // CSS selector  
 ```
-_querySelectorAll_
- - It returns all the elements that match a CSS selector.
- - Return type is NodeList.
- - Example:  
+- _querySelectorAll_
+  - It returns all the elements that match a CSS selector.
+  - Return type is NodeList.
+  - Example:  
 ```
 let items = document.querySelectorAll(".menu-item");  
 ```
 
 2. How do you **create and insert a new element into the DOM**?  
-**Answer:** First create a new element by using document.createElement(tagName). For add content or attributes
+**Answer:**  
+First create a new element by using document.createElement(tagName). For add content or attributes
 can use `.innerText` (for add text) or `.innerHTML` (for add HTML). Then insert it into the DOM using `appendChild()`
 method for add as the first child.
-_Example:_  
+- _Example:_  
 ``` 
 <div id="container"></div>  
 
@@ -84,7 +85,7 @@ document.getElementById("container").appendChild(newPara);
 navigation will stops but event bubbling will not stop.  
   
 - _stopPropagation()_  
-  It stops Event Bubbling  
+  - It stops Event Bubbling  
   - Does not stop default behavior  
   - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
 trigger the `<div>` click event listener. By Using e.stopPropagation() on the button click will  
