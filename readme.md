@@ -85,7 +85,7 @@ navigation will stops but event bubbling will not stop.
   
   -stopPropagation()  
       - It stops Event Bubbling  
-    - Does not stop default behavior  
-    - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
+      - Does not stop default behavior  
+      - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
 trigger the `<div>` click event listener. By Using e.stopPropagation() on the button click will  
 stop the event form reaching the `<div>`.
