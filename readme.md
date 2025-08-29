@@ -2,17 +2,18 @@
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?  
 Answer:  
-_getElementById_
+*getElementById*
 - It returns the element with a specific id.
 - Return type is single element object or null if not fund.
 - Example:  
-```code
+```
 let firstItem = document.getElementById("idName");  
+```
 _getElementsByClassName_
 - It returns all the elements that given class name.
 - Return type is an HtmlCollection. HtmlCollection are live and it's auto update if anything change in DOM.
 - Example:  
-```code  
+``` 
 let firstItems = document.getElementsByClassName("className");  
 _querySelector_
 - It returns the first element that matches a CSS selector. It could be id, class, tag, attributes.
