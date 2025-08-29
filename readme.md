@@ -77,13 +77,13 @@ _Why is it useful-_
   
 5. What is the difference between **preventDefault() and stopPropagation()** methods?  
 **Answer:**  
--*preventDefault()*  
+-preventDefault()  
   - It stops default behavior  
   - Does not stop Event Bubbling  
   - Example: If click on `<a href="">`, it's normally navigate to another page. By using `preventDefault()`  
 navigation will stops but event bubbling will not stop.  
   
-  -*stopPropagation()*  
+  -stopPropagation()  
       - It stops Event Bubbling  
     - Does not stop default behavior  
     - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
