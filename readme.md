@@ -34,7 +34,7 @@ _querySelectorAll_
 let items = document.querySelectorAll(".menu-item");  
 ```
 
-2. How do you **create and insert a new element into the DOM**?
+2. How do you **create and insert a new element into the DOM**?  
 **Answer:** First create a new element by using document.createElement(tagName). For add content or attributes
 can use `.innerText` (for add text) or `.innerHTML` (for add HTML). Then insert it into the DOM using `appendChild()`
 method for add as the first child.
@@ -77,14 +77,15 @@ _Why is it useful-_
   
 5. What is the difference between **preventDefault() and stopPropagation()** methods?  
 **Answer:**  
-_preventDefault()-_  
-- It stops default behavior  
-- Does not stop Event Bubbling  
-- Example: If click on `<a href="">`, it's normally navigate to another page. By using `preventDefault()`  
+-_preventDefault()_  
+  - It stops default behavior  
+  - Does not stop Event Bubbling  
+  - Example: If click on `<a href="">`, it's normally navigate to another page. By using `preventDefault()`  
 navigation will stops but event bubbling will not stop.  
-_stopPropagation()-_  
-- It stops Event Bubbling  
-- Does not stop default behavior  
-- Example: If click a button inside a `<div>`, click event will normally bubble up and also  
+  
+-_stopPropagation()_  
+  - It stops Event Bubbling  
+  - Does not stop default behavior  
+  - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
 trigger the `<div>` click event listener. By Using e.stopPropagation() on the button click will  
 stop the event form reaching the `<div>`.
