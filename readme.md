@@ -2,10 +2,10 @@
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?  
 Answer:  
-*getElementById*
-- It returns the element with a specific id.
-- Return type is single element object or null if not fund.
-- Example:  
+-*getElementById*
+   - It returns the element with a specific id.
+   - Return type is single element object or null if not fund.
+   - Example:  
 ```
 let firstItem = document.getElementById("idName");  
 ```
@@ -15,18 +15,21 @@ _getElementsByClassName_
 - Example:  
 ``` 
 let firstItems = document.getElementsByClassName("className");  
-_querySelector_
-- It returns the first element that matches a CSS selector. It could be id, class, tag, attributes.
-- Return type is single element object or null if not fund.
-- Example:  
-```code  
+```  
+
+ -_querySelector_
+  - It returns the first element that matches a CSS selector. It could be id, class, tag, attributes.
+  - Return type is single element object or null if not fund.
+  - Example:  
+`
 let menuItem = document.querySelector(".menu-item"); //element with class="menu-item"  
 let header = document.querySelector("#header"); // element with id="header"  
 let special = document.querySelector("div > p.note"); // CSS selector  
-_querySelectorAll_
-- It returns all the elements that match a CSS selector.
-- Return type is NodeList.
-- Example: let items = document.querySelectorAll(".menu-item");  
+`
+-_querySelectorAll_
+ - It returns all the elements that match a CSS selector.
+ - Return type is NodeList.
+ - Example: let items = document.querySelectorAll(".menu-item");  
 
 
 2. How do you **create and insert a new element into the DOM**?
