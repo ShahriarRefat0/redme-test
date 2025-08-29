@@ -50,10 +50,10 @@ document.getElementById("container").appendChild(newPara);
 ```
 3. What is **Event Bubbling** and how does it work?  
 **Answer:**  
-_Event Bubbling_  
+- _Event Bubbling_  
 কোনো element এ event trigger করলে event টি শুধু সেই element এ থেমে যায় না। এই element তার parent,  
 সেটি আবার তার grand Parent এই ভাবে Document পর্যন্ত উপরে উঠে যায়। এই উপরে উঠার প্রক্রিয়াকেই Event Bubbling বলে।  
-_how does it work-_  
+- _how does it work-_  
 ```code  
 <div id="parent">  
 <button id="child">Click Me</button>  
@@ -77,15 +77,15 @@ _how does it work-_
   
 5. What is the difference between **preventDefault() and stopPropagation()** methods?  
 **Answer:**  
-- preventDefault()  
+- _preventDefault()_  
   - It stops default behavior  
   - Does not stop Event Bubbling  
   - Example: If click on `<a href="">`, it's normally navigate to another page. By using `preventDefault()`  
 navigation will stops but event bubbling will not stop.  
   
-  - stopPropagation()  
-      - It stops Event Bubbling  
-      - Does not stop default behavior  
-      - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
+- _stopPropagation()_  
+  It stops Event Bubbling  
+  - Does not stop default behavior  
+  - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
 trigger the `<div>` click event listener. By Using e.stopPropagation() on the button click will  
 stop the event form reaching the `<div>`.
