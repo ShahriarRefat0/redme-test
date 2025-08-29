@@ -65,25 +65,25 @@ _how does it work-_
   
 4. What is **Event Delegation** in JavaScript? Why is it useful?  
 **Answer:**  
-_Event Delegation-_  
-Child element কে আলাদা আলাদা event listener না দিয়ে, parent element কে একটি event listener দিয়ে  
-event bubbling ব্যবহার করে child element এর কাজ করানোই হচ্ছে Event Delegation।  
-_Why is it useful-_  
-- Code কম লিখে বেশি কাজ করানো যায়।  
-- website এর Performance optimization ভালো হয়।  
-- Dynamic elements handle করা সহজ হয়ে যায়। DOM এ নতুন element এর জন্য আলাদা করে  
+- _Event Delegation-_  
+  - Child element কে আলাদা আলাদা event listener না দিয়ে, parent element কে একটি event listener দিয়ে  
+  event bubbling ব্যবহার করে child element এর কাজ করানোই হচ্ছে Event Delegation।  
+- _Why is it useful-_  
+    - Code কম লিখে বেশি কাজ করানো যায়।  
+    - website এর Performance optimization ভালো হয়।  
+    - Dynamic elements handle করা সহজ হয়ে যায়। DOM এ নতুন element এর জন্য আলাদা করে  
 আবার event listener বসাতে হয় না। parent দিয়েই কাজ করা যায়।  
 
   
 5. What is the difference between **preventDefault() and stopPropagation()** methods?  
 **Answer:**  
--preventDefault()  
+- preventDefault()  
   - It stops default behavior  
   - Does not stop Event Bubbling  
   - Example: If click on `<a href="">`, it's normally navigate to another page. By using `preventDefault()`  
 navigation will stops but event bubbling will not stop.  
   
-  -stopPropagation()  
+  - stopPropagation()  
       - It stops Event Bubbling  
       - Does not stop default behavior  
       - Example: If click a button inside a `<div>`, click event will normally bubble up and also  
